@@ -1,0 +1,14 @@
+{
+  "name": "create-nm-branch",
+  "version": "1.0.0",
+  "description": "A simple utility that creates, and commits to origin a branch of a git branch that includes node modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "create-nm-branch": "index.js"
+  }
+}
