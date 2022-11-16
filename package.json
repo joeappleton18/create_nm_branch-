@@ -10,5 +10,8 @@
   "license": "ISC",
   "bin": {
     "create-nm-branch": "index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.1.2"
   }
 }
