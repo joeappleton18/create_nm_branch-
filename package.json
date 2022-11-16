@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "create-nm-branch": "index.js"
+    "create-nm-branch": "index.mjs"
   },
   "dependencies": {
     "chalk": "^5.1.2"
