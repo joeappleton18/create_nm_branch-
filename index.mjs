@@ -25,12 +25,13 @@ function init() {
 
     execSync(`git checkout -b ${nodeModulesBranch}`, { stdio: false });
     log(chalk.blue("committing node_modules, this may take a few seconds"));
-    execSync(`git add -f node_modules`);
+    execSync(`git add -f node_modules`, { stdio: false });
     botCommit();
     log(chalk.blue("pushing to the origin: hope your internet is fast"));
-    execSync(`git push origin master --force`);
-    execSync(`git checkout ${currentBranch}`);
-    execSync(`git branch -D ${nodeModulesBranch}`);
+    execSync(`git push origin master --force`, { stdio: false });
+    execSync(`git checkout ${currentBranch}`, { stdio: false });
+    execSync(`git branch -D ${nodeModulesBranch}`, { stdio: false });
+    execSync(`npm install`);
     log(chalk.blue("done"));
   } catch (error) {
     console.error(`could not complete: ${error.toString()}`);
