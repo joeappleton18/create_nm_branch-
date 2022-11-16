@@ -10,7 +10,7 @@ const botCommit = () => {
 
 function init() {
   try {
-    log(chalk.blue("Starting process"));
+    log(chalk.blue("starting process"));
     const currentBranch = execSync("git rev-parse --abbrev-ref HEAD")
       .toString()
       .replace("\n", "");
